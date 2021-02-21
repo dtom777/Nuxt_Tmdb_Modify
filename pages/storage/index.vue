@@ -19,7 +19,7 @@
                   class="rounded"
                 ></v-img>
                 <div :class='{"d-flex justify-space-between": $vuetify.breakpoint.smAndUp}'>
-                  <v-btn :href="'/movies/' + movie.movieId + '/'" class="blue" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'"  :small='$vuetify.breakpoint.xsOnly' aria-label="Edit Movie"><v-icon>{{ iconPencil }}</v-icon>EDIT</v-btn>
+                  <v-btn :to="'/movies/' + movie.movieId + '/'" class="blue" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'"  :small='$vuetify.breakpoint.xsOnly' aria-label="Edit Movie"><v-icon>{{ iconPencil }}</v-icon>EDIT</v-btn>
                   <v-btn @click="remove(movie.id)" class="red" :width="$vuetify.breakpoint.smAndUp ? '50%': '100%'" :small='$vuetify.breakpoint.xsOnly' aria-label="Delete Movie"><v-icon>{{ iconDelete }}</v-icon>DELETE</v-btn>
                 </div>
               </v-card>
