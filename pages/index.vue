@@ -7,7 +7,7 @@
       </v-col>
       <v-col v-for="movie in results" :key="movie.id" cols=6 sm=3>
         <v-card>
-          <nuxt-link rel="preload" as="image" :to="'/movies/' + movie.id + '/'">
+          <nuxt-link :to="'/movies/' + movie.id + '/'">
             <v-img
               :src="`https://image.tmdb.org/t/p/w185/${movie.poster_path}`"
               class="rounded"
