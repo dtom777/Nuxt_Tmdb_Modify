@@ -105,6 +105,7 @@ export default {
     //   })
     // ],
     vendor: ['lodash'],
+    extractCSS:true,
     optimization: {
       removeAvailableModules: true,
     },
