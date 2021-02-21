@@ -62,7 +62,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
-    // ['@nuxtjs/pwa', { icon: false }],
+    ['@nuxtjs/pwa', { icon: false }],
     'nuxt-webfontloader'
   ],
   webfontloader: {
@@ -105,6 +105,9 @@ export default {
     //   })
     // ],
     vendor: ['lodash'],
+    optimization: {
+      removeAvailableModules: true,
+    },
   },
   publicRuntimeConfig: {
     apiUrl: API_URL,
