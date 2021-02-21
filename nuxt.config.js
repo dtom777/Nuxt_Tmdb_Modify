@@ -104,7 +104,7 @@ export default {
     //     '_': 'lodash'
     //   })
     // ],
-    vendor: ['lodash'],
+    vendor: ['lodash','vuetify'],
     optimization: {
       removeAvailableModules: true,
     },
