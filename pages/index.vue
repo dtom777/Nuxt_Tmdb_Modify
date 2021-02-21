@@ -9,7 +9,7 @@
         <v-card>
           <nuxt-link rel="preload" as="image" :to="'/movies/' + movie.id + '/'">
             <v-img
-              :src="`https://image.tmdb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`"
+              :src="`https://image.tmdb.org/t/p/w185/${movie.poster_path}`"
               class="rounded"
             ></v-img>
             <v-card-title class="d-block text-truncate subtitle-1 white--text">{{ movie.title }}</v-card-title>
