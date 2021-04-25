@@ -252,7 +252,6 @@ export default {
         this.$router.push("/storage");
       } else {
         alert("Please Login!");
-        this.$router.push(`/movies/${this.movieId}`);
       }
     },
     resetMemo() {
